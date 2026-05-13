@@ -1,0 +1,120 @@
+{
+    "nav": {
+        "home": "Accueil",
+        "about": "À propos",
+        "actions": "Nos actions",
+        "volunteer": "Bénévolat",
+        "testimonials": "Témoignages",
+        "contact": "Contact",
+        "join": "Nous rejoindre"
+    },
+    "hero": {
+        "subtitle": "FFBN - Filles et Fils du Burundi du Nord-Pas-de-Calais",
+        "title": "Unis pour l'intégration, la solidarité et la réussite",
+        "cta": "Découvrir l'association"
+    },
+    "about": {
+        "tag": "Qui sommes-nous ?",
+        "title": "Filles et Fils du Burundi (FFBN)",
+        "p1": "L'association Filles et Fils du Burundi du Nord-Pas-de-Calais (FFBN) est bien plus qu'une simple association. C'est une famille, un réseau d'entraide et un tremplin pour l'avenir.",
+        "p2": "Depuis notre création, nous nous engageons à faciliter l'intégration, à promouvoir l'excellence académique et à valoriser la culture burundaise à travers le monde.",
+        "learnMore": "En savoir plus",
+        "members": "Membres",
+        "cities": "Villes",
+        "events": "Événements"
+    },
+    "actions": {
+        "tag": "Nos Missions",
+        "title": "Au Cœur de Nos Actions",
+        "subtitle": "Nous intervenons sur plusieurs fronts pour garantir l'épanouissement de chaque étudiant.",
+        "discover": "Découvrir"
+    },
+    "volunteer": {
+        "title": "Envie de faire la différence ?",
+        "subtitle": "Rejoignez une équipe dynamique et contribuez à l'impact positif de notre communauté. Votre temps et vos talents sont précieux.",
+        "btnVolunteer": "Devenir Bénévole",
+        "btnDonate": "Faire un Don"
+    },
+    "footer": {
+        "description": "FFBN - Filles et Fils du Burundi du Nord-Pas-de-Calais. Unis pour l'intégration et la réussite.",
+        "quickLinks": "Liens Rapides",
+        "contact": "Contact",
+        "newsletter": "Newsletter",
+        "newsletterText": "Restez informé de nos actualités.",
+        "emailPlaceholder": "Votre email",
+        "copyright": "© 2026 FFBN. Tous droits réservés.",
+        "home": "Accueil",
+        "whoWeAre": "Qui sommes-nous",
+        "ourActions": "Nos Actions",
+        "events": "Événements",
+        "contactLink": "Contact"
+    },
+    "events": {
+        "tag": "À ne pas manquer",
+        "title": "Événements à Venir",
+        "subtitle": "Participez à nos activités et restez connecté à la communauté.",
+        "details": "Détails",
+        "noEvents": "Aucun événement prévu pour le moment."
+    },
+    "contact": {
+        "tag": "Contact",
+        "title": "Parlons-nous",
+        "subtitle": "Une question ? Envie de nous rejoindre ? Contactez-nous via le formulaire ci-dessous ou nos coordonnées directes.",
+        "location": "Localisation",
+        "phone": "Téléphone",
+        "name": "Nom complet",
+        "namePlaceholder": "Ex: Jean Dupont",
+        "email": "Email",
+        "emailPlaceholder": "Ex: jean@example.com",
+        "message": "Message",
+        "messagePlaceholder": "Comment pouvons-nous vous aider ?",
+        "send": "Envoyer le message",
+        "success": "Message envoyé avec succès !",
+        "error": "Erreur lors de l'envoi du message."
+    },
+    "values": {
+        "title": "Nos Valeurs",
+        "identity": {
+            "title": "Identité",
+            "desc": "Préservation de la culture burundaise."
+        },
+        "solidarity": {
+            "title": "Solidarité",
+            "desc": "L'entraide au cœur de nos actions."
+        },
+        "excellence": {
+            "title": "Excellence",
+            "desc": "Accompagnement vers la réussite."
+        }
+    },
+    "identity": {
+        "title": "Identité & Culture",
+        "subtitle": "Célébrer nos racines pour mieux construire l'avenir.",
+        "tag": "Patrimoine",
+        "introTitle": "La Culture au Cœur de la FFBN",
+        "introDesc": "Chaque année, nous organisons un spectacle culturel majeur pour faire profiter de notre culture à nos étudiants et à la région. C'est un moment fort de partage, de musique et de danse traditionnelle.",
+        "galleryTitle": "Spectacles Précédents",
+        "gallerySubtitle": "Retour en images sur nos dernières éditions riches en émotions."
+    },
+    "solidarity": {
+        "title": "Solidarité & Entraide",
+        "subtitle": "Agir ensemble pour un impact positif et durable.",
+        "tag": "Social",
+        "introTitle": "Nos Campagnes d'Action",
+        "introDesc": "La FFBN multiplie les campagnes pour aider les enfants et les personnes en difficulté. Notre mission est de créer des ponts de solidarité entre le Burundi et le Nord-Pas-de-Calais.",
+        "galleryTitle": "Nos Actions en Images",
+        "gallerySubtitle": "Découvrez les moments forts de nos campagnes de soutien."
+    },
+    "excellence": {
+        "title": "Excellence Académique",
+        "subtitle": "Soutenir la réussite et l'ambition de nos étudiants.",
+        "tag": "Réussite",
+        "wallTitle": "Le Mur de la Réussite",
+        "wallSubtitle": "Fiers de nos diplômés qui ont terminé leurs études avec succès.",
+        "graduatesTitle": "Nos Diplômés"
+    },
+    "partners": {
+        "tag": "Soutiens & Partenaires",
+        "title": "Ils nous font confiance"
+    }
+}

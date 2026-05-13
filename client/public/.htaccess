@@ -1,0 +1,34 @@
+# FFBN - Configuration SPA Vue.js pour Apache (PlanetHoster)
+# Redirige toutes les routes client vers index.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Ne pas réécrire les fichiers et dossiers qui existent physiquement
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+
+  # Ne pas réécrire les requêtes API (elles vont vers Node.js)
+  RewriteCond %{REQUEST_URI} !^/api/
+
+  # Rediriger tout le reste vers index.html (SPA routing)
+  RewriteRule ^(.*)$ /index.html [L]
+</IfModule>
+
+# Compression GZIP pour performance
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript application/json
+</IfModule>
+
+# Cache des assets statiques (1 an car les noms contiennent un hash)
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>

@@ -1,0 +1,32 @@
+# robots.txt - FFBN Association
+# Créé le 28 Février 2026
+
+# Autoriser tous les moteurs de recherche
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /.env*
+Disallow: /test/
+
+# Google specific
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+
+# Bing specific
+User-agent: Bingbot
+Allow: /
+Disallow: /admin/
+
+# Crawl delay
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://ffbn.fr/sitemap.xml
+
+# Pour les images
+User-agent: Googlebot-Image
+Allow: /

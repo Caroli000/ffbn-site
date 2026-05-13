@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>✅ Problème d'Événements Résolu</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 700px;
+            padding: 50px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        .status {
+            font-size: 4em;
+            margin: 20px 0;
+        }
+        .message {
+            color: #666;
+            font-size: 1.1em;
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+        .problem, .solution {
+            text-align: left;
+            background: #f5f5f5;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+        .problem {
+            border-left-color: #dc3545;
+            background: #f8d7da;
+        }
+        .solution {
+            border-left-color: #28a745;
+            background: #d4edda;
+        }
+        .problem h3, .solution h3 {
+            margin-top: 0;
+        }
+        code {
+            background: #f0f0f0;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-family: monospace;
+            display: block;
+            margin: 10px 0;
+            text-align: left;
+            overflow-x: auto;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 30px;
+            margin-top: 20px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 1em;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        .button:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+        .files-changed {
+            background: #e7f3ff;
+            border-left: 4px solid #2196F3;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+            text-align: left;
+        }
+        .files-changed h4 {
+            margin-top: 0;
+            color: #2196F3;
+        }
+        .files-changed ul {
+            margin: 10px 0;
+            margin-left: 20px;
+        }
+        .files-changed li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>✅ Événements sur Page d'Accueil</h1>
+        <div class="status">📅</div>
+        <p class="message">
+            <strong>Problème Résolu!</strong><br>
+            Les événements s'affichent maintenant correctement sur la page d'accueil.
+        </p>
+
+        <div class="problem">
+            <h3>❌ Problème Identifié</h3>
+            <p>Les contrôleurs publics (EventController, ActionController, StatsController) appelaient des méthodes <strong>asynchrones</strong> sans utiliser <strong>await</strong>.</p>
+            <p>Cela signifiait que les réponses retournaient des promesses non résolues au lieu des données réelles.</p>
+            <code>getUpcoming(req, res) {
+    const events = this.service.getUpcoming(lang); // ❌ Retourne une Promise!
+    res.json({ success: true, data: events }); // data = Promise
+}</code>
+        </div>
+
+        <div class="solution">
+            <h3>✅ Solution Appliquée</h3>
+            <p>Conversion de toutes les méthodes pour être correctement asynchrones avec async/await :</p>
+            <code>async getUpcoming(req, res) {
+    try {
+        const events = await this.service.getUpcoming(lang); // ✓ Attend le résultat
+        res.json({ success: true, data: events }); // data = Array
+    } catch (err) {
+        res.status(500).json({ success: false, message: err.message });
+    }
+}</code>
+        </div>
+
+        <div class="files-changed">
+            <h4>📝 Fichiers Corrigés</h4>
+            <ul>
+                <li><strong>server/controllers/EventController.js</strong>
+                    <br>✓ getAll() → async getAll() avec await
+                    <br>✓ getUpcoming() → async getUpcoming() avec await
+                    <br>✓ getById() → async getById() avec await
+                </li>
+                <li><strong>server/controllers/ActionController.js</strong>
+                    <br>✓ getAll() → async getAll() avec await
+                </li>
+                <li><strong>server/controllers/StatsController.js</strong>
+                    <br>✓ getAll() → async getAll() avec await
+                </li>
+            </ul>
+        </div>
+
+        <div class="solution">
+            <h3>✅ Endpoints Maintenant Fonctionnels</h3>
+            <ul style="text-align: left; margin-left: 20px;">
+                <li><code style="display: inline;">/api/events/upcoming</code> - Événements à venir</li>
+                <li><code style="display: inline;">/api/events</code> - Tous les événements</li>
+                <li><code style="display: inline;">/api/actions</code> - Toutes les actions</li>
+                <li><code style="display: inline;">/api/stats</code> - Toutes les statistiques</li>
+            </ul>
+        </div>
+
+        <a href="/" class="button">
+            → Voir la Page d'Accueil
+        </a>
+    </div>
+
+    <script>
+        setTimeout(() => {
+            // Auto-redirect après 3 secondes
+            if (!window.userClicked) {
+                window.location.href = '/'
+            }
+        }, 3000)
+
+        document.querySelector('.button').addEventListener('click', () => {
+            window.userClicked = true
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- ⚡ PERFORMANCE - DNS & Resource Hints -->
+    <link rel="dns-prefetch" href="//www.googletagmanager.com">
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Meta Tags SEO (Essentiels) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- ⚡ CRITICAL RENDERING PATH - Réduire CLS -->
+    <meta name="theme-color" content="#ce1126">
+    <meta name="color-scheme" content="light">
+    
+    <!-- Title & Description (Google) -->
+    <title>FFBN - Filles et Fils du Burundi | Association Solidarity France</title>
+    <meta name="description" content="FFBN: Association d'aide et solidarité pour les Filles et Fils du Burundi en France. Actions sociales, événements communautaires, volontariat et bénévolat.">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://ffbn.fr/">
+    
+    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="FFBN - Filles et Fils du Burundi">
+    <meta property="og:title" content="FFBN - Association Filles et Fils du Burundi">
+    <meta property="og:description" content="Association d'aide et de solidarité pour les Filles et Fils du Burundi en France">
+    <meta property="og:image" content="https://ffbn.fr/logo.png">
+    <meta property="og:url" content="https://ffbn.fr/">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@FFBN">
+    <meta name="twitter:title" content="FFBN - Association Burundi">
+    <meta name="twitter:description" content="Association d'aide et de solidarité pour les Filles et Fils du Burundi">
+    <meta name="twitter:image" content="https://ffbn.fr/logo.png">
+    
+    <!-- Keywords (optionnel mais utile) -->
+    <meta name="keywords" content="FFBN, Association Burundi, Solidarité, Filles Fils Burundi, France, Bénévolat, Actions sociales">
+    
+    <!-- Author & Copyright -->
+    <meta name="author" content="FFBN Association">
+    <meta name="copyright" content="© 2026 FFBN - Tous droits réservés">
+    
+    <!-- Robots & Indexing -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <meta name="bingbot" content="index, follow">
+    
+    <!-- Language -->
+    <meta name="language" content="French">
+    <meta http-equiv="content-language" content="fr-FR">
+    
+    <!-- Fonts & Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FFBN2026"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-FFBN2026', {
+            'page_path': window.location.pathname,
+            'allow_google_signals': true,
+            'anonymize_ip': false
+        });
+    </script>
+    
+    <!-- Schema Markup (Structured Data) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "FFBN - Filles et Fils du Burundi",
+        "description": "Association d'aide et de solidarité pour les Filles et Fils du Burundi en France",
+        "url": "https://ffbn.fr",
+        "logo": "https://ffbn.fr/logo.png",
+        "image": "https://ffbn.fr/logo.png",
+        "email": "contact@ffbn.fr",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Customer Support",
+            "telephone": "+33-XXX-XXX-XXXX",
+            "email": "contact@ffbn.fr",
+            "areaServed": "FR"
+        },
+        "sameAs": [
+            "https://www.facebook.com/ffbn",
+            "https://www.instagram.com/ffbn",
+            "https://www.linkedin.com/company/ffbn"
+        ],
+        "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "France",
+            "postalCode": "59000",
+            "addressCountry": "FR"
+        },
+        "foundingDate": "2024",
+        "areaServed": "FR",
+        "knowsAbout": ["Association", "Solidarité", "Bénévolat", "Aide humanitaire", "Communauté Burundaise"]
+    }
+    </script>
+</head>
+
+<body>
+    <div id="app"></div>
+    
+    <!-- ⚡ INLINE SCRIPT POUR PERF MAXIMALE - DÉSACTIVER ANIMATIONS AU DÉMARRAGE -->
+    <script>
+        // Désactiver les animations AVANT le rendu
+        document.documentElement.classList.add('no-animations-startup')
+        const s = document.createElement('style')
+        s.id = 'perf-startup'
+        s.textContent = '.no-animations-startup * { animation: none !important; transition: none !important; }'
+        document.head.appendChild(s)
+        
+        // Réactiver après le chargement
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.documentElement.classList.remove('no-animations-startup')
+                const ps = document.getElementById('perf-startup')
+                if (ps) ps.remove()
+            }, 1500)
+        }, { once: true })
+    </script>
+    
+    <script type="module" src="/src/main.js" defer></script>
+</body>
+
+</html>
