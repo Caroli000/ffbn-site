@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "title": {
+      "fr": "Soirée Culturelle Burundaise",
+      "en": "Burundian Cultural Evening"
+    },
+    "date": "2026-04-15",
+    "description": {
+      "fr": "Une soirée de célébration de la culture burundaise avec danses, musique et cuisine traditionnelle.",
+      "en": "An evening celebrating Burundian culture with dances, music and traditional cuisine."
+    },
+    "location": "Paris, France"
+  },
+  {
+    "id": 2,
+    "title": {
+      "fr": "Forum d'Orientation Universitaire",
+      "en": "University Orientation Forum"
+    },
+    "date": "2026-05-20",
+    "description": {
+      "fr": "Forum dédié aux nouveaux arrivants pour les guider dans leurs démarches académiques et administratives.",
+      "en": "Forum dedicated to newcomers to guide them through their academic and administrative procedures."
+    },
+    "location": "Lyon, France"
+  },
+  {
+    "id": 3,
+    "title": {
+      "fr": "Journée de Solidarité",
+      "en": "Solidarity Day"
+    },
+    "date": "2026-06-10",
+    "description": {
+      "fr": "Collecte de fonds et activités solidaires pour soutenir les étudiants en difficulté.",
+      "en": "Fundraising and solidarity activities to support students in difficulty."
+    },
+    "location": "Marseille, France"
+  }
+]

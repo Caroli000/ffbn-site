@@ -1,0 +1,78 @@
+node_modules/
+client/node_modules/
+client/dist/
+.env
+.DS_Store
+*.log
+coverage/
+seo-data/
+.vscode/
+dist/
+tmp/
+/.idea/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production
+/dist
+/build
+*.out
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+.env.production.local
+.env.test.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.iml
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# OS
+Thumbs.db
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+
+# Testing
+coverage/
+.nyc_output/
+
+# Misc
+.cache/
+.next/
+out/
+*.tsbuildinfo
+
+# Test files (development/debugging tools)
+server/testDirectBrowser.js
+server/testClientFlow.js
+server/testAdminFetch.js
+server/testBrowserFlow.js
+client/public/test-*.html
+client/public/admin-*.html
+client/members_list.txt
+
+# Database
+*.db
+*.sqlite
+*.sqlite3

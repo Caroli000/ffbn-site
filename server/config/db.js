@@ -1,0 +1,17 @@
+﻿const mongoose = require('mongoose');
+
+const connectDB = async () => {
+    try {
+        const conn = await mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/ffbn', {
+            autoIndex: true,
+        });
+        console.log(`[DB] MongoDB Connecté : ${conn.connection.host}`);
+    } catch (error) {
+
+        console.error(`[DB] Erreur de connexion MongoDB : ${error.message}`);
+        console.warn('[DB] Démarrage en mode dégradé : certaines fonctionnalités nécessitant la base de données seront désactivées.');
+
+    }
+};
+
+module.exports = connectDB;

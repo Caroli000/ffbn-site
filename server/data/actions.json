@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "icon": "fas fa-graduation-cap",
+    "title": {
+      "fr": "Accompagnement Académique",
+      "en": "Academic Support"
+    },
+    "description": {
+      "fr": "Tutorats, conseils d'orientation et partage de ressources pour assurer la réussite universitaire de chacun.",
+      "en": "Tutoring, guidance counseling and resource sharing to ensure academic success for everyone."
+    }
+  },
+  {
+    "id": 2,
+    "icon": "fas fa-hands-helping",
+    "title": {
+      "fr": "Solidarité & Entraide",
+      "en": "Solidarity & Mutual Aid"
+    },
+    "description": {
+      "fr": "Un fonds de solidarité et un réseau de parrainage pour qu'aucun étudiant ne se sente isolé ou en difficulté.",
+      "en": "A solidarity fund and sponsorship network so no student feels isolated or in difficulty."
+    }
+  },
+  {
+    "id": 3,
+    "icon": "fas fa-drum",
+    "title": {
+      "fr": "Rayonnement Culturel",
+      "en": "Cultural Outreach"
+    },
+    "description": {
+      "fr": "Promotion de la culture burundaise à travers des événements, des danses et des rencontres interculturelles.",
+      "en": "Promotion of Burundian culture through events, dances and intercultural meetings."
+    }
+  }
+]

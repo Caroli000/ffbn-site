@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "label": {
+      "fr": "Membres",
+      "en": "Members"
+    },
+    "value": "100+",
+    "icon": "fas fa-users"
+  },
+  {
+    "id": 2,
+    "label": {
+      "fr": "Villes",
+      "en": "Cities"
+    },
+    "value": "3",
+    "icon": "fas fa-map-marker-alt"
+  },
+  {
+    "id": 3,
+    "label": {
+      "fr": "Événements",
+      "en": "Events"
+    },
+    "value": "20+",
+    "icon": "fas fa-calendar-alt"
+  }
+]
